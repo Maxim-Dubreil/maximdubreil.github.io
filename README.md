@@ -1,14 +1,14 @@
 # Portfolio Project
 
-Ce projet est une application web créée avec React et Vite, conçue pour être déployée sur GitHub Pages.
+This project is a web application created with React and Vite, designed to be deployed on GitHub Pages.
 
 ## Configuration
 
-Explication pour réutiliser mon workflow, assurez-vous de configurer correctement la base de l'URL avec votre _username_ `GitHub` pour le déploiement sur GitHub Pages.
+To reuse this workflow, make sure to correctly configure the base URL with your GitHub `username` for deployment on GitHub Pages.
 
-1. **Configurer Vite**
+1. **Configure Vite**
 
-   Dans le fichier `vite.config.js`, ajoutez la propriété `base` avec le nom de votre dépôt GitHub.
+   In the `vite.config.js` file, add the `base` property with your GitHub repository name.
 
    ```javascript
    // vite.config.js
@@ -21,9 +21,9 @@ Explication pour réutiliser mon workflow, assurez-vous de configurer correcteme
    });
    ```
 
-2. **Configurer React Router**
+2. **Configure React Router**
 
-   Avec l'utilisation de `react-router-dom` pour la navigation, enveloppez votre application avec `BrowserRouter` et définissez le `basename`.
+   When using `react-router-dom` for navigation, wrap your application with `BrowserRouter` and set the `basename`.
 
    ```jsx
    // src/main.jsx
@@ -34,40 +34,40 @@ Explication pour réutiliser mon workflow, assurez-vous de configurer correcteme
 
    ReactDOM.createRoot(document.getElementById("root")).render(
      <React.StrictMode>
-       <BrowserRouter basename="/maximdubreil.github.io">
+       <BrowserRouter basename="/_githubusername_.github.io/">
          <App />
        </BrowserRouter>
      </React.StrictMode>
    );
    ```
 
-## Démarrage rapide en local
+## Quick Start Locally
 
-1. **Installer les dépendances**
+1. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. **Lancer le serveur de développement**
+2. **Start the development server**
 
    ```bash
    npm run dev
    ```
 
-## Scripts disponibles
+## Available Scripts
 
-- `npm run dev`: Lance l'application en mode développement.
-- `npm run build`: Compile l'application pour la production.
-- `npm run preview`: Lance un serveur local pour prévisualiser le build de production.
+- `npm run dev`: Runs the app in development mode.
+- `npm run build`: Builds the app for production.
+- `npm run preview`: Runs a local server to preview the production build.
 
-## Déploiement
+## Deployment
 
-Ce projet inclut un workflow GitHub Actions pour un déploiement automatisé sur GitHub Pages. Le workflow est défini dans `.github/workflows/deploy.yml`.
+This project includes a GitHub Actions workflow for automated deployment to GitHub Pages. The workflow is defined in `.github/workflows/deploy.yml`.
 
-Le déploiement est déclenché à chaque `push` uniquement sur la branche `main`, permettant ainsi de build l'application automatiquement, faisant fonctionner la page github.io.
+Deployment is triggered on each `push` to the `main` branch only, which automatically builds the application and makes the github.io page work.
 
-## Structure du projet
+## Project Structure
 
 ```text
 portfolio-github/
