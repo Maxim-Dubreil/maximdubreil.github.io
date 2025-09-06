@@ -7,6 +7,9 @@ const About = () => {
         padding: "2rem",
         fontFamily: "Arial, sans-serif",
         textAlign: "center",
+        fullWidth: "100vw",
+        minHeight: "100vh",
+        boxSizing: "border-box",
       }}
     >
       <h1>About Me</h1>

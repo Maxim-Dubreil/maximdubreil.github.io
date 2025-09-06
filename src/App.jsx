@@ -1,7 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom'
-
-function Home() { return <h1>Home</h1> }
-function About() { return <h1>About</h1> }
+import Home from './pages/Home'
+import About from './pages/About'
 function NotFound() { return <h1>404 – Not Found</h1> }
 
 export default function App() {
